@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%- include('partials/head') %>
+    <title>Home</title>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<body>
+
+  <%- include('partials/header') %>
+
+  <main>
+    <div class="home-main">
+      <h1 class="h1-home">Sign in to start</h1>
+      <div class="flexbox-main">
+          <button class="main-button"><a href="/users/login">Sign in</a></button>
+          <button class="main-button"><a href="/users/register">New User</a></button>
+      </div>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+  
+</body>
 </html>
