@@ -9,7 +9,7 @@ App to display and add information of the most relevant spacecrafts and their cl
 Download zip
 
 ```sh
-https://github.com/mcamimejia/finapptracker.git
+https://github.com/mcamimejia/space-station.git
 ```
 
 Move to the folder
