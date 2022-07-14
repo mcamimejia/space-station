@@ -15,10 +15,10 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(50)
         },
         activity_start: {
-            type: dataTypes.DATE
+            type: dataTypes.INTEGER
         },
         activity_end: {
-            type: dataTypes.DATE
+            type: dataTypes.INTEGER
         },
         fuel: {
             type: dataTypes.STRING(50)

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head') %>
+    <title><%= data.name %></title>
+  </head>
+<body>
+
+  <%- include('./partials/header') %>
+
+  <main>
+    <div class="flexbox-profile">
+      <article class="transactions-container">
+        <h3 ><%= data.name %></h3>
+        <div class="transactions-details">
+          <div class="transactions-more">
+            <div><strong>País:</strong> <%= data.country%></div>
+            <div><strong>Inicio Actividad:</strong> <%= data.activity_start%></div>
+            <div><strong>Fin Actividad:</strong> <%= data.activity_end%></div>
+            <div><strong>Combustible:</strong> <%= data.fuel %></div>
+            <% if(data.cargo){%>
+            <div><strong>Carga útil:</strong> <%= data.cargo %></div>
+            <% } %>
+            <% if(data.research){%>
+            <div><strong>Área de estudio:</strong> <%= data.research %></div>
+            <% } %>
+            <% if(data.capacity){%>
+            <div><strong>Capacidad:</strong> <%= data.capacity %></div>
+            <% } %>
+            <% if(data.objective){%>
+            <div><strong>Objetivo:</strong> <%= data.objective %></div>
+            <% } %>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <%- include('./partials/footer') %>
+  
+</body>
+</html>

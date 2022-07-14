@@ -10,12 +10,60 @@
 
   <main>
     <div class="home-main">
-      <h1 class="h1-home">Sign in to start</h1>
+      <h1 class="h1-home">CLASIFICACIÓN</h1>
       <div class="flexbox-main">
-          <button class="main-button"><a href="/users/login">Sign in</a></button>
-          <button class="main-button"><a href="/users/register">New User</a></button>
+          <button class="main-button"><a href="/lanzaderas">Naves Lanzaderas</a></button>
+          <button class="main-button"><a href="/roboticas">Naves Robóticas</a></button>
+          <button class="main-button"><a href="/tripuladas">Naves Tripuladas</a></button>
       </div>
     </div>
+
+    <div class="info">
+      <div> <a href="/create">Agregar Nave</a></div>
+    </div>
+
+    <div class="flexbox-profile">
+      <article class="transactions-container">
+        <h3>Naves Lanzaderas</h3>
+        <div class="transactions-details">
+          <% lanzaderas.forEach(nave => { %>
+            <div class="transactions">
+              <div><%= nave.name%></div>
+              <div><%= nave.country%></div>
+            </div> 
+          <% }) %>
+        </div>
+      </article>
+    </div>
+
+    <div class="flexbox-profile">
+      <article class="transactions-container">
+        <h3>Naves Robóticas</h3>
+        <div class="transactions-details">
+          <% roboticas.forEach(nave => { %>
+            <div class="transactions">
+              <div><%= nave.name%></div>
+              <div><%= nave.country%></div>
+            </div> 
+          <% }) %>
+        </div>
+      </article>
+    </div>
+
+    <div class="flexbox-profile">
+      <article class="transactions-container">
+        <h3>Naves Tripuladas</h3>
+        <div class="transactions-details">
+          <% tripuladas.forEach(nave => { %>
+            <div class="transactions">
+              <div><%= nave.name%></div>
+              <div><%= nave.country%></div>
+            </div> 
+          <% }) %>
+        </div>
+      </article>
+    </div>
+   
   </main>
 
   <%- include('partials/footer') %>

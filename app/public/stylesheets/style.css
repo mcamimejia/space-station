@@ -6,10 +6,10 @@
 }
 
 :root {
-  --main:rgba(90,199,166,0.8);
-  --second: #377A66;
-  --third: #BCFBE8;
-  --fourth: #c4e3da;
+  --main:rgba(1, 3, 62, 0.7);
+  --second: #0b2063;
+  --third: #131b77;
+  --fourth: #0d098b;
   --invalid : rgba(211, 8, 8,0.5);
 }
 
@@ -22,7 +22,7 @@ button {
 }
 
 footer {
-  background-color: var(--fourth);
+  background-color: var(--main);
   margin-top: 5rem;
 }
 
@@ -121,14 +121,14 @@ li {
 .form-input {
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(90,199,166,0.5);
+  box-shadow: 0px 0px 5px rgba(155, 73, 151, 0.5);
   outline: none;
   padding: 8px;
   width: 90%;
 }
 
 .forms {
-  background-color: rgba(90,199,166,0.2);
+  background-color: rgba(60, 94, 206, 0.2);
   border-radius: 15px;
   padding: 1rem;
 }
@@ -217,6 +217,8 @@ li {
 .logo {
   width: 100%;
   height: 8rem;
+  transform: rotate(90deg);
+  margin-left: 1rem;
 }
 
 .main-button {

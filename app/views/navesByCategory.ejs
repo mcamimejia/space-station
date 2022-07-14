@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head') %>
+    <title><%= category%></title>
+  </head>
+<body>
+
+  <%- include('./partials/header') %>
+
+  <main>
+    <div class="info">
+      <div> <a href="/create">Agregar Nave</a></div>
+    </div>
+    <div class="flexbox-profile">
+      <article class="transactions-container">
+        <h3>Naves <%= category%></h3>
+        <div class="transactions-details">
+          <% data.forEach(nave => { %>
+            <div class="transactions">
+              <div><%= nave.name%></div>
+              <div><%= nave.country%></div>
+              <a href="/<%= category%>/<%= nave.id%>"><i class="fa-solid fa-angles-right more"></i></a>
+            </div> 
+          <% }) %>
+        </div>
+      </article>
+    </div>   
+  </main>
+
+  <%- include('./partials/footer') %>
+  
+</body>
+</html>
