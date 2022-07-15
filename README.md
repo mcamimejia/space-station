@@ -4,18 +4,18 @@ SofkaU challenge
 # Details
 App to display and add information of the most relevant spacecrafts and their classifications.
 
-### To execute the project:
+### To execute the app project:
 
-Download zip
+Download zip:
 
 ```sh
 https://github.com/mcamimejia/space-station.git
 ```
 
-Move to the folder
+Move to the folder:
 
 ```sh
-cd myApp
+cd app
 ```
 
 Install dependencies:
@@ -24,13 +24,13 @@ Install dependencies:
 npm install
 ```
 
-Run SQL Script in your server to have access to the Data Base
+Run SQL Script in your server to have access to the Data Base:
 
 ```sh
 space_station_db.sql
 ```
 
-Change server credentials to match your server
+Change server credentials to match your server:
 
 ```sh
 space-station/myApp/database/config/config.js  -->
@@ -44,8 +44,13 @@ space-station/myApp/database/config/config.js  -->
   },
 ```
 
-Execute the project
+Execute the project:
 
 ```sh
 nodemon bin/www
 ```
+
+### To execute the Java console programm:
+
+Run spaceStation folder with Java.
+
